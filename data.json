@@ -106,7 +106,8 @@
     "satBoost": 1.3,
     "shadowLift": 24,
     "gain": 1.05,
-    "glyphStretch": 1.3
+    "glyphStretch": 1.3,
+    "backdropDim": 0.45
   },
   "theme": {
     "bg": [

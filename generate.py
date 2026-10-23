@@ -7,7 +7,9 @@ The photo is downsampled to a character grid; each cell becomes an ASCII glyph
 as a colored terminal render on a dark neofetch-style card.
 """
 
+import base64
 import hashlib
+import io
 import json
 from html import escape
 from pathlib import Path
@@ -38,6 +40,9 @@ def portrait_cells():
     cell_w, cell_h = PORTRAIT["w"] / cols, PORTRAIT["h"] / rows
     ramp = P["ramp"]
     out = []
+    # A dimmed copy of the grid sits behind the glyphs, so any sliver between rows
+    # (common when the card is scaled down) shows a darker shade, not the black card.
+    backdrop = Image.new("RGBA", (cols, rows), (0, 0, 0, 0))
     for ry in range(rows):
         for rx in range(cols):
             r, g, b = img.getpixel((rx, ry))
@@ -51,16 +56,20 @@ def portrait_cells():
             d = P["densityFloor"] + (1 - P["densityFloor"]) * t
             ch = ramp[round(d * (len(ramp) - 1))]
             lift = lambda c: clamp8(P["shadowLift"] + (l + (c - l) * P["satBoost"]) * P["gain"])
-            fill = "#%02x%02x%02x" % (lift(r), lift(g), lift(b))
+            rgb = lift(r), lift(g), lift(b)
+            fill = "#%02x%02x%02x" % rgb
+            backdrop.putpixel((rx, ry), (*(clamp8(c * P["backdropDim"]) for c in rgb), 255))
             x = PORTRAIT["x"] + rx * cell_w + cell_w / 2
             # Divided by the stretch so it lands back on the row after the group's scaleY.
             y = PORTRAIT["y"] + (ry * cell_h + cell_h * 0.82) / P["glyphStretch"]
             out.append(f'<text x="{x:.1f}" y="{y:.1f}" fill="{fill}">{escape(ch)}</text>')
-    return "".join(out), round(cell_h * 1.02, 1)
+    buf = io.BytesIO()
+    backdrop.save(buf, "PNG", optimize=True)
+    return "".join(out), round(cell_h * 1.02, 1), base64.b64encode(buf.getvalue()).decode()
 
 
 def build_svg():
-    cells, font_size = portrait_cells()
+    cells, font_size, backdrop = portrait_cells()
     right, y = [], 136
     for sec in data["sections"]:
         if sec["title"]:
@@ -129,7 +138,7 @@ def build_svg():
 
   <text x="54" y="60" class="eyebrow">{escape(ID["eyebrowLeft"])}</text>
   <rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="20" fill="{T["panel"]}"/>
-  <g clip-path="url(#portraitClip)"><g class="px" transform="matrix(1 0 0 {k} 0 {py * (1 - k):.2f})">{cells}</g></g>
+  <g clip-path="url(#portraitClip)"><image href="data:image/png;base64,{backdrop}" x="{px}" y="{py}" width="{pw}" height="{ph}" preserveAspectRatio="none"/><g class="px" transform="matrix(1 0 0 {k} 0 {py * (1 - k):.2f})">{cells}</g></g>
   <rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="20" fill="none" stroke="{T["boxStroke"]}" stroke-opacity="0.8"/>
   <text x="54" y="530" class="tagHero">{escape(ID["tagline1"])}</text>
   <text x="54" y="556" class="tagHero">{escape(ID["tagline2"])}</text>
