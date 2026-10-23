@@ -142,10 +142,6 @@ def build_svg():
 
 def build_readme(version):
     links = " ·\n".join(f'  <a href="{l["href"]}">{l["label"]}</a>' for l in data["links"])
-    user = data["githubUser"]
-    selected = "\n".join(
-        f'- [`{s["repo"]}`](https://github.com/{user}/{s["repo"]}) — {s["desc"]}' for s in data["selected"]
-    )
     # ?v=<hash> busts GitHub's camo image cache whenever the SVG changes.
     return f"""<div align="center">
   <img src="./assets/profile.svg?v={version}" width="100%" alt="{ID["name"]} — terminal profile" />
@@ -154,14 +150,6 @@ def build_readme(version):
 <div align="center">
 {links}
 </div>
-
-<br />
-
-### Selected projects
-
-{selected}
-
-<sub>{data["footerNote"]}</sub>
 """
 
 
