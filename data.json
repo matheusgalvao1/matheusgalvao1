@@ -6,8 +6,8 @@
     "eyebrowLeft": "BRAZIL · UTC−3",
     "eyebrowRight": "PROFILE / SYSTEM OVERVIEW",
     "roleHero": "AI Engineer · Agentic AI & LLM Systems",
-    "tagline1": "I build agents from scratch",
-    "tagline2": "and the evals that test them.",
+    "tagline1": "I build AI agents and the",
+    "tagline2": "tools that make them useful.",
     "footLabel": "— EDUCATION",
     "foot1": "M.Sc. Computer Science · IPB, Portugal",
     "foot2": "B.Sc. Computer Science · UTFPR, Brazil"
@@ -18,20 +18,20 @@
       "rows": [
         {
           "key": "Focus",
-          "value": "agentic AI · LLM systems · dev tools",
+          "value": "AI agents · LLM workflows · evals",
           "accent": true
         },
         {
-          "key": "Building",
-          "value": "LLM workflows for content at scale"
+          "key": "At work",
+          "value": "LLM pipelines that write & review content"
         },
         {
           "key": "Agents",
-          "value": "loops · tools · sandboxes · evals"
+          "value": "harnesses · context · tool use · sandboxes"
         },
         {
-          "key": "Research",
-          "value": "deep learning for forecasting"
+          "key": "Side",
+          "value": "WhatsApp & Telegram bots · MCP servers"
         },
         {
           "key": "Offline",
@@ -48,20 +48,16 @@
           "accent": true
         },
         {
-          "key": "AI",
-          "value": "RAG · LoRA fine-tuning · evaluation"
+          "key": "Models",
+          "value": "Anthropic · OpenAI · open-source"
         },
         {
-          "key": "Frameworks",
-          "value": "Agent SDKs · LangChain · CrewAI"
+          "key": "Tooling",
+          "value": "Claude Code · Codex · MCP"
         },
         {
-          "key": "ML",
-          "value": "PyTorch · TensorFlow · forecasting"
-        },
-        {
-          "key": "Backend",
-          "value": "FastAPI · Flask · Docker · AWS"
+          "key": "Apps",
+          "value": "web · mobile (Flutter) · chat bots"
         }
       ]
     }
