@@ -53,7 +53,8 @@ def portrait_cells():
             lift = lambda c: clamp8(P["shadowLift"] + (l + (c - l) * P["satBoost"]) * P["gain"])
             fill = "#%02x%02x%02x" % (lift(r), lift(g), lift(b))
             x = PORTRAIT["x"] + rx * cell_w + cell_w / 2
-            y = PORTRAIT["y"] + ry * cell_h + cell_h * 0.82
+            # Divided by the stretch so it lands back on the row after the group's scaleY.
+            y = PORTRAIT["y"] + (ry * cell_h + cell_h * 0.82) / P["glyphStretch"]
             out.append(f'<text x="{x:.1f}" y="{y:.1f}" fill="{fill}">{escape(ch)}</text>')
     return "".join(out), round(cell_h * 1.02, 1)
 
@@ -85,6 +86,9 @@ def build_svg():
         )
 
     px, py, pw, ph = PORTRAIT["x"], PORTRAIT["y"], PORTRAIT["w"], PORTRAIT["h"]
+    # Glyphs are shorter than the row pitch; stretch them vertically so rows meet
+    # instead of leaving dark lines of card between them.
+    k = P["glyphStretch"]
     nl = "\n  "
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-labelledby="title">
   <title id="title">{escape(ID["name"])} — terminal profile</title>
@@ -125,7 +129,7 @@ def build_svg():
 
   <text x="54" y="60" class="eyebrow">{escape(ID["eyebrowLeft"])}</text>
   <rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="20" fill="{T["panel"]}"/>
-  <g clip-path="url(#portraitClip)" class="px">{cells}</g>
+  <g clip-path="url(#portraitClip)"><g class="px" transform="matrix(1 0 0 {k} 0 {py * (1 - k):.2f})">{cells}</g></g>
   <rect x="{px}" y="{py}" width="{pw}" height="{ph}" rx="20" fill="none" stroke="{T["boxStroke"]}" stroke-opacity="0.8"/>
   <text x="54" y="530" class="tagHero">{escape(ID["tagline1"])}</text>
   <text x="54" y="556" class="tagHero">{escape(ID["tagline2"])}</text>

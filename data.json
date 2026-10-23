@@ -105,7 +105,8 @@
     "densityFloor": 0.16,
     "satBoost": 1.3,
     "shadowLift": 24,
-    "gain": 1.05
+    "gain": 1.05,
+    "glyphStretch": 1.3
   },
   "theme": {
     "bg": [
