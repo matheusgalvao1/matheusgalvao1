@@ -35,7 +35,7 @@
         },
         {
           "key": "Offline",
-          "value": "cave diving · mountains · travel"
+          "value": "scuba diving · surf · travel"
         }
       ]
     },
@@ -48,16 +48,16 @@
           "accent": true
         },
         {
-          "key": "Models",
-          "value": "Anthropic · OpenAI · open-source"
+          "key": "Cloud",
+          "value": "AWS · Cloudflare · fly.io"
         },
         {
-          "key": "Tooling",
-          "value": "Claude Code · Codex · MCP"
+          "key": "Runtime",
+          "value": "Docker · serverless · edge workers"
         },
         {
-          "key": "Apps",
-          "value": "web · mobile (Flutter) · chat bots"
+          "key": "Data",
+          "value": "Postgres · vector DBs · object storage"
         }
       ]
     }

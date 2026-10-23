@@ -51,12 +51,12 @@
   <text x="488" y="176" class="key">At work</text><text x="700" y="176" class="dots">········</text><text x="786" y="176" class="value">LLM pipelines that write &amp; review content</text>
   <text x="488" y="216" class="key">Agents</text><text x="700" y="216" class="dots">········</text><text x="786" y="216" class="value">harnesses · context · tool use · sandboxes</text>
   <text x="488" y="256" class="key">Side</text><text x="700" y="256" class="dots">········</text><text x="786" y="256" class="value">WhatsApp &amp; Telegram bots · MCP servers</text>
-  <text x="488" y="296" class="key">Offline</text><text x="700" y="296" class="dots">········</text><text x="786" y="296" class="value">cave diving · mountains · travel</text>
+  <text x="488" y="296" class="key">Offline</text><text x="700" y="296" class="dots">········</text><text x="786" y="296" class="value">scuba diving · surf · travel</text>
   <text x="488" y="344" class="section">— STACK</text>
   <text x="488" y="386" class="key">Languages</text><text x="700" y="386" class="dots">········</text><text x="786" y="386" class="accent">Python · TypeScript</text>
-  <text x="488" y="426" class="key">Models</text><text x="700" y="426" class="dots">········</text><text x="786" y="426" class="value">Anthropic · OpenAI · open-source</text>
-  <text x="488" y="466" class="key">Tooling</text><text x="700" y="466" class="dots">········</text><text x="786" y="466" class="value">Claude Code · Codex · MCP</text>
-  <text x="488" y="506" class="key">Apps</text><text x="700" y="506" class="dots">········</text><text x="786" y="506" class="value">web · mobile (Flutter) · chat bots</text>
+  <text x="488" y="426" class="key">Cloud</text><text x="700" y="426" class="dots">········</text><text x="786" y="426" class="value">AWS · Cloudflare · fly.io</text>
+  <text x="488" y="466" class="key">Runtime</text><text x="700" y="466" class="dots">········</text><text x="786" y="466" class="value">Docker · serverless · edge workers</text>
+  <text x="488" y="506" class="key">Data</text><text x="700" y="506" class="dots">········</text><text x="786" y="506" class="value">Postgres · vector DBs · object storage</text>
   <text x="488" y="554" class="section">— AT A GLANCE</text>
   <rect x="488" y="570" width="148" height="56" rx="12" class="box"/><text x="502" y="590" class="statLabel">EXPERIENCE</text><text x="502" y="614" class="statValue">2+ yrs</text>
   <rect x="650" y="570" width="148" height="56" rx="12" class="box"/><text x="664" y="590" class="statLabel">DEGREE</text><text x="664" y="614" class="statValue">M.Sc.</text>
