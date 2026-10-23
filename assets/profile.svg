@@ -54,12 +54,13 @@
   <text x="488" y="296" class="key">Offline</text><text x="700" y="296" class="dots">········</text><text x="786" y="296" class="value">scuba diving · surf · travel</text>
   <text x="488" y="344" class="section">— STACK</text>
   <text x="488" y="386" class="key">Languages</text><text x="700" y="386" class="dots">········</text><text x="786" y="386" class="accent">Python · TypeScript</text>
-  <text x="488" y="426" class="key">Cloud</text><text x="700" y="426" class="dots">········</text><text x="786" y="426" class="value">AWS · Cloudflare · fly.io</text>
-  <text x="488" y="466" class="key">Runtime</text><text x="700" y="466" class="dots">········</text><text x="786" y="466" class="value">Docker · serverless · edge workers</text>
-  <text x="488" y="506" class="key">Data</text><text x="700" y="506" class="dots">········</text><text x="786" y="506" class="value">Postgres · vector DBs · object storage</text>
-  <text x="488" y="554" class="section">— AT A GLANCE</text>
-  <rect x="488" y="570" width="148" height="56" rx="12" class="box"/><text x="502" y="590" class="statLabel">EXPERIENCE</text><text x="502" y="614" class="statValue">2+ yrs</text>
-  <rect x="650" y="570" width="148" height="56" rx="12" class="box"/><text x="664" y="590" class="statLabel">DEGREE</text><text x="664" y="614" class="statValue">M.Sc.</text>
-  <rect x="812" y="570" width="148" height="56" rx="12" class="box"/><text x="826" y="590" class="statLabel">LANGUAGES</text><text x="826" y="614" class="statValue">PT·EN·IT</text>
-  <rect x="974" y="570" width="148" height="56" rx="12" class="box"/><text x="988" y="590" class="statLabel">BASED IN</text><text x="988" y="614" class="statValue">Brazil</text>
+  <text x="488" y="426" class="key">Tooling</text><text x="700" y="426" class="dots">········</text><text x="786" y="426" class="value">Claude Code · Codex (work) · OpenCode (side)</text>
+  <text x="488" y="466" class="key">Cloud</text><text x="700" y="466" class="dots">········</text><text x="786" y="466" class="value">AWS · Cloudflare · fly.io</text>
+  <text x="488" y="506" class="key">Runtime</text><text x="700" y="506" class="dots">········</text><text x="786" y="506" class="value">Docker · serverless · edge workers</text>
+  <text x="488" y="546" class="key">Data</text><text x="700" y="546" class="dots">········</text><text x="786" y="546" class="value">Postgres · vector DBs · object storage</text>
+  <text x="488" y="594" class="section">— AT A GLANCE</text>
+  <rect x="488" y="610" width="148" height="56" rx="12" class="box"/><text x="502" y="630" class="statLabel">EXPERIENCE</text><text x="502" y="654" class="statValue">2+ yrs</text>
+  <rect x="650" y="610" width="148" height="56" rx="12" class="box"/><text x="664" y="630" class="statLabel">DEGREE</text><text x="664" y="654" class="statValue">M.Sc.</text>
+  <rect x="812" y="610" width="148" height="56" rx="12" class="box"/><text x="826" y="630" class="statLabel">LANGUAGES</text><text x="826" y="654" class="statValue">PT·EN·IT</text>
+  <rect x="974" y="610" width="148" height="56" rx="12" class="box"/><text x="988" y="630" class="statLabel">BASED IN</text><text x="988" y="654" class="statValue">Brazil</text>
 </svg>

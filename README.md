@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/profile.svg?v=9f00a057" width="100%" alt="Matheus Galvão — terminal profile" />
+  <img src="./assets/profile.svg?v=6f83c4ed" width="100%" alt="Matheus Galvão — terminal profile" />
 </div>
 
 <div align="center">

@@ -48,6 +48,10 @@
           "accent": true
         },
         {
+          "key": "Tooling",
+          "value": "Claude Code · Codex (work) · OpenCode (side)"
+        },
+        {
           "key": "Cloud",
           "value": "AWS · Cloudflare · fly.io"
         },
