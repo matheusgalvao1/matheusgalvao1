@@ -8,9 +8,9 @@
     "roleHero": "Software Engineer · AI & Agents",
     "tagline1": "I build AI agents and the",
     "tagline2": "tools that make them useful.",
-    "footLabel": "— ELSEWHERE",
-    "foot1": "matheusgalvao.com",
-    "foot2": "github.com/matheusgalvao1"
+    "footLabel": "— EDUCATION",
+    "foot1": "M.Sc. Computer Science · IPB, Portugal",
+    "foot2": "B.Sc. Computer Science · UTFPR, Brazil"
   },
   "sections": [
     {
@@ -79,7 +79,7 @@
   ],
   "links": [
     {
-      "label": "Website",
+      "label": "matheusgalvao.com",
       "href": "https://matheusgalvao.com"
     },
     {
@@ -110,13 +110,13 @@
     "cols": 92,
     "charAspect": 0.55,
     "ramp": ".:-=+*oO#%@$",
-    "bgLumaCut": 232,
+    "bgLumaCut": 256,
     "bgSatCut": 0.1,
-    "contrast": 1.5,
-    "densityFloor": 0.1,
-    "satBoost": 1.4,
-    "shadowLift": 30,
-    "gain": 1.25
+    "contrast": 1.4,
+    "densityFloor": 0.16,
+    "satBoost": 1.3,
+    "shadowLift": 24,
+    "gain": 1.05
   },
   "theme": {
     "bg": [
