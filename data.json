@@ -1,0 +1,141 @@
+{
+  "_comment": "Single source of truth. Edit, then run `uv run --with pillow python generate.py` to rebuild README.md + assets/profile.svg. Everything here is public: keep it true and verifiable.",
+  "githubUser": "matheusgalvao1",
+  "identity": {
+    "name": "Matheus Galvão",
+    "eyebrowLeft": "BRAZIL · UTC−3",
+    "eyebrowRight": "PROFILE / SYSTEM OVERVIEW",
+    "roleHero": "Software Engineer · AI & Agents",
+    "tagline1": "I build AI agents and the",
+    "tagline2": "tools that make them useful.",
+    "footLabel": "— ELSEWHERE",
+    "foot1": "matheusgalvao.com",
+    "foot2": "github.com/matheusgalvao1"
+  },
+  "sections": [
+    {
+      "title": "",
+      "rows": [
+        {
+          "key": "Focus",
+          "value": "AI agents · MCP servers · LLM apps",
+          "accent": true
+        },
+        {
+          "key": "Building",
+          "value": "assistants people actually use"
+        },
+        {
+          "key": "Shipping",
+          "value": "web apps · bots · developer tools"
+        },
+        {
+          "key": "Offline",
+          "value": "cave diving · snorkeling · travel"
+        }
+      ]
+    },
+    {
+      "title": "— STACK",
+      "rows": [
+        {
+          "key": "Languages",
+          "value": "TypeScript · Python · Dart",
+          "accent": true
+        },
+        {
+          "key": "Backend",
+          "value": "Node.js · FastAPI"
+        },
+        {
+          "key": "AI",
+          "value": "agents · tool use · MCP · RAG"
+        },
+        {
+          "key": "Tooling",
+          "value": "Claude Code · Codex · uv"
+        }
+      ]
+    }
+  ],
+  "statsLabel": "— AT A GLANCE",
+  "stats": [
+    {
+      "label": "ON GITHUB",
+      "value": "5 yrs"
+    },
+    {
+      "label": "PUBLIC REPOS",
+      "value": "20"
+    },
+    {
+      "label": "MAIN LANG",
+      "value": "TS / Py"
+    },
+    {
+      "label": "BASED IN",
+      "value": "Brazil"
+    }
+  ],
+  "links": [
+    {
+      "label": "Website",
+      "href": "https://matheusgalvao.com"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/matheus-rigoni-galvao/"
+    }
+  ],
+  "selected": [
+    {
+      "repo": "ai-powered-portfolio",
+      "desc": "a portfolio with an embedded AI agent that answers questions about me."
+    },
+    {
+      "repo": "sticker-agent",
+      "desc": "a WhatsApp assistant that creates and remixes stickers."
+    },
+    {
+      "repo": "anotAI",
+      "desc": "local-first notes app with bring-your-own-key AI editing."
+    },
+    {
+      "repo": "snorkel-conditions-checker",
+      "desc": "live marine, weather and tide data rolled into a 4-tier dive rating."
+    }
+  ],
+  "footerNote": "Card generated from data.json by generate.py in this repo.",
+  "portrait": {
+    "cols": 92,
+    "charAspect": 0.55,
+    "ramp": ".:-=+*oO#%@$",
+    "bgLumaCut": 232,
+    "bgSatCut": 0.1,
+    "contrast": 1.5,
+    "densityFloor": 0.1,
+    "satBoost": 1.4,
+    "shadowLift": 30,
+    "gain": 1.25
+  },
+  "theme": {
+    "bg": [
+      "#05070b",
+      "#0a0f17",
+      "#080b12"
+    ],
+    "glowA": "#1dd3b0",
+    "glowB": "#3b82f6",
+    "eyebrow": "#8793a8",
+    "hero": "#f4f7fb",
+    "key": "#ffb454",
+    "dots": "#263143",
+    "value": "#c9d4e5",
+    "accent": "#61e7c6",
+    "section": "#8c98ad",
+    "box": "#0d141f",
+    "boxStroke": "#253146",
+    "panel": "#0a1017",
+    "divider": "#1b2432"
+  }
+}
